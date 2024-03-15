@@ -1,0 +1,17 @@
+
+
+
+literatue,  academic 
+
+
+for car:
+
+1. create body
+2. install engine
+3. tyre ibstall
+4. painting 
+5. test drive 
+
+object: output
+class : instruction
+

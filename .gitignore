@@ -28,5 +28,3 @@ TestResults.xml
 *.pch
 # java class files
 *.class
-# anythin wuthout . in the name
-*.*

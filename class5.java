@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class class5 {
@@ -15,6 +15,8 @@ public class class5 {
 
         int average = (sum1+sum2)/2;
         System.out.println("Average of the sum of next 5 numbers: " + average);
+
+        sc.close();
     
 
     }

@@ -1,12 +1,12 @@
 import java.util.Scanner;
-import static java.lang.Math.pow;
+// import static java.lang.Math.pow;
 
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println(" Hello, World! This is my first Java program. ");
 
-        double myDouble;
-        int myInt;
+        // double myDouble;
+        // int myInt;
         boolean hasInt=false;
         int myNumber=0;
 

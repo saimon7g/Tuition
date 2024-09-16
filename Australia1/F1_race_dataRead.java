@@ -42,30 +42,35 @@ public class F1_race_dataRead {
             double fastestLap;
 
             System.out.println("Enter the data:");
+            // taking input Team Name which is a non empty string
             System.out.print("Team Name: ");
             teamName = scanner.nextLine();
             while (teamName.isEmpty() || teamName.isBlank()) {
                 System.out.print("Invalid input. Please enter a valid team name: ");
                 teamName = scanner.nextLine();
             }
+            // taking input Car Code which is a non empty string
             System.out.print("Car Code: ");
             carCode = scanner.nextLine();
             while (carCode.isEmpty() || carCode.isBlank()) {
                 System.out.print("Invalid input. Please enter a valid car code: ");
                 carCode = scanner.nextLine();
             }
+            // taking input Driver Name which is a non empty string
             System.out.print("Driver Name: ");
             driverName = scanner.nextLine();
             while (driverName.isEmpty() || driverName.isBlank()) {
                 System.out.print("Invalid input. Please enter a valid driver name: ");
                 driverName = scanner.nextLine();
             }
+            // taking input Grand Prix which is a non empty string
             System.out.print("Grand Prix: ");
             grandPrix = scanner.nextLine();
             while (grandPrix.isEmpty() || grandPrix.isBlank()) {
                 System.out.print("Invalid input. Please enter a valid grand prix: ");
                 grandPrix = scanner.nextLine();
             }
+            // taking input Position Finished which is an integer
             System.out.print("Position Finished: ");
             if (scanner.hasNextInt()) {
                 positionFinished = scanner.nextInt();
@@ -82,6 +87,7 @@ public class F1_race_dataRead {
                     }
                 }
             }
+            // taking input Fastest Lap which is a non negative double
             System.out.println("Fastest Lap: ");
             while (true) {
                 if (scanner.hasNextDouble()) {
@@ -98,6 +104,7 @@ public class F1_race_dataRead {
                     scanner.nextLine();
                 }
             }
+            // creating a new object of Team class and storing it in the array
             teams[i] = new Team(teamName, carCode, driverName, grandPrix, positionFinished, fastestLap);
         }
         int extra = 0;
@@ -111,6 +118,9 @@ public class F1_race_dataRead {
                 System.out.println("Invalid input");
                 continue;
             } else {
+
+                // extra data entry
+
                 String teamName;
                 String carCode;
                 String driverName;
@@ -193,7 +203,7 @@ public class F1_race_dataRead {
             System.out.println();
         }
         System.out.println("What would you like to name your csv file?");
-        String fileName = scanner.nextLine();
+        String fileName = scanner.nextLine(); // taking input file name
         try {
             FileWriter fileWriter = new FileWriter(fileName + ".csv");
             PrintWriter printWriter = new PrintWriter(fileWriter);
